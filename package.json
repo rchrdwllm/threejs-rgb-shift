@@ -1,0 +1,23 @@
+{
+    "name": "threejs-rgb-split",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "parcel src/index.html --port 3000"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@parcel/transformer-glsl": "^2.2.1",
+        "@parcel/transformer-sass": "^2.2.1",
+        "parcel": "^2.2.1",
+        "three": "^0.137.5"
+    },
+    "dependencies": {
+        "imagesloaded": "^4.1.4",
+        "locomotive-scroll": "^4.1.3"
+    }
+}

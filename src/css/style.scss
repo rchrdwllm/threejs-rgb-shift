@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0 10rem;
+
+    h1 {
+        font-size: 6rem;
+        line-height: 1.4;
+
+        span {
+            text-decoration: underline;
+            text-underline-offset: 1.25rem;
+            cursor: crosshair;
+        }
+    }
+}
+
+.works {
+    padding: 3rem 0 10rem;
+
+    h1 {
+        font-size: 4rem;
+        margin-left: 10rem;
+    }
+
+    .imgs-container {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+
+        * {
+            opacity: 0;
+        }
+
+        .img {
+            &:not(:first-child) {
+                margin-top: 10rem;
+            }
+
+            &.balls {
+                width: 50%;
+                margin-left: 10rem;
+            }
+
+            &.cube {
+                width: 75%;
+                align-self: flex-end;
+                margin-right: 6rem;
+            }
+
+            &.lava {
+                width: 40%;
+                margin-left: 8rem;
+            }
+        }
+    }
+}
